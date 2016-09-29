@@ -14,7 +14,7 @@ body {
 }
 .grid {
     max-width: 960px;
-    display: flex;
+    /*display: flex;*/
     margin: 0 auto;
     flex: 1;
     flex-direction: column;
