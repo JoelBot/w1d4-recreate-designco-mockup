@@ -11,8 +11,6 @@ html, body {
 
 body {
     display: flex;
-    /*justify-content: center;*/
-    /*align-items: center;*/
 }
 .grid {
     max-width: 960px;
@@ -22,17 +20,20 @@ body {
     flex-direction: column;
 }
 .row {
-    display: flex;
 }
 .col {
     display: flex;
     flex: 1;
+}
+.hidden {
+    visibility: hidden;
 }
 #heading {
     display: flex;
     background-color: grey;
     height: 60px;
     width: 100%;
+    padding: 20px;
 }
 #brand {
     font-size: 25px;
@@ -49,53 +50,49 @@ body {
 
 #imagebox {
     display: flex;
-    flex: 20;
+    flex-flow:row nowrap;
+    max-height: 500px;
 }
 
 #leftcolumn {
     display: flex;
-    flex: 4;
+    flex: 5;
     flex-direction: column;
 }
-#leftinnerleftcolumn {
+#leftupper {
     display: flex;
-    flex: 3;
+    flex: 5;
     margin-bottom: 5px;
     margin-right: 5px;
 }
-#leftinnerrightcolumn {
+#leftlower {
     display: flex;
-    flex: 2;
+    flex: 3;
     margin-top: 5px;
     margin-right: 5px;
 
 }
-#leftinnerleftcolumnleft {
-    display: flex;
+#leftlowerleft {
     flex: 2;
     margin-right: 5px;
-    /*margin-top: 5px;*/
 }
-#leftinnerrightcolumnright {
-    display: flex;
+#leftlowerright {
     flex: 3;
     margin-left: 5px;
-    /*margin-top: 5px;*/
-
 }
 #rightcolumn {
     display: flex;
-    flex: 4;
+    flex: 3;
     flex-direction: column;
     margin-left: 5px;
 }
-#rightinnerleftcolumn {
+#rightupper {
     display:flex;
-    flex: 2;
+    flex: 1;
     margin-bottom: 5px;
 }
-#rightinnerrightcolumn {
+#rightlower {
     display: flex;
-    flex: 3;
+    flex: 2;
     margin-top: 5px;
 }
