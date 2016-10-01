@@ -20,7 +20,6 @@ body {
     margin: 0 auto;
     /*margin: 0;*/
     padding: 0;
-    font-family: 'Arimo', sans-serif;
 }
 .grid {
     max-width: 960px;
@@ -41,57 +40,47 @@ body {
 .headercol {
     /*display: flex;
     flex: 1;*/
-    /*padding-left: 1px;*/
-    text-align: left;
-    max-width: 960px;
-    position: fixed;
-    left: 440px    ;
-    top: 0;
+    padding-left: 1px;
+}
+.hidden {
+    visibility: hidden;
 }
 .rightjustify {
     /*align-items: right;*/
     text-align: right;
 }
+.flex-direction-column {
+    flex-direction: column;
+}
+.one-quarter-flex {
+    flex: 1;
+}
+.three-quarter-flex {
+    flex: 3;
+    /*padding: 5px;*/
+}
+.text-columns {
+    columns: 3;
+}
 
-.bigfont {
-    font-size: 20px;
-}
-.menulist {
-    margin-left: auto;
-    margin-right: auto;
-}
-.redbar {
+#sillyredbar {
     background-color: red;
-    max-width: 960px;
     /*width: 100%;*/
     height: 3px;
     position: fixed;
-    left: 480px;
+    left: 0;
     right: 0;
-    width: 960px;
     z-index: 2;
 }
 #logo {
     width: 100px;
-    margin-right: 25px;
     /*padding-right: 20px;*/
     /*margin-left: 10px;*/
-}
-.menulist li {
-    padding-right: 15px;
-    padding-left: 15px;
-}
-/*#rightli {
-    float: right;
-}*/
-.red {
-    color: red;
 }
 #searchicon {
     width: 20px;
     height: auto;
-    float: right;
-    margin-left: 390px;
+    margin-left: 25px;
 }
 #heading {
     /*display: flex;*/
@@ -118,17 +107,15 @@ body {
     display: table;
     margin: 0 auto;
 }
-
 ul#horizontallist {
-    /*min-width: 980px;*/
+    min-width: 980px;
     list-style: none;
-    max-width: 960px
 }
 ul#horizontallist li {
     display: inline;
 }
 /*#heading li {
-list-style-type: none;
+    list-style-type: none;
 
 }*/
 #brand {
@@ -136,24 +123,19 @@ list-style-type: none;
 }
 #mainparagraphrow {
     /*flex: 4;*/
-    display: flex;
     justify-content: center;
     align-items: center;
     padding: 5%;
     flex-direction: column;
-    padding-top: 60px;
 }
 
 #titletext {
     text-align: center;
-    font-size: 30px;
-
 }
 
 #titlecontent {
     text-align: center;
-    width: 450px;
-    font-size: 25px;
+    width: 300px;
 }
 
 #imagebox {
@@ -208,31 +190,4 @@ list-style-type: none;
     display: flex;
     flex: 2;
     margin-top: 5px;
-}
-
-.inforow {
-    display: flex;
-    text-align: left;
-}
-.inforow h3 {
-    color: red;
-    margin-bottom: -10px;
-}
-.flex-direction-column {
-    flex-direction: column;
-}
-.one-quarter-flex {
-    flex: 1;
-}
-.three-quarter-flex {
-    flex: 3;
-    /*padding: 5px;*/
-}
-.text-columns {
-    columns: 3;
-    padding-left: 25px;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding: 25px;
-    text-align: left;
 }

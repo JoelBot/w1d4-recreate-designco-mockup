@@ -6,92 +6,96 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Stylesheets go here. -->
+  <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" />
   <link rel="stylesheet" type="text/css" href="css/global.css" />
 </head>
 <body>
-
-  <main class="grid">
-    <div id="sillyredbar"></div>
+  <div class="grid">
+    <div class="redbar"></div>
     <div class="row" id="heading">
-      <div class="col" id="brand">
-        <img id="logo" src="img/designco-logo.png" alt="designco logo" />
-      </div>
-      <div class="headercol">
-        Home
-      </div>
-      <div class="headercol">
-        Portfolio
-      </div>
-      <div class="headercol">
-        About
-      </div>
-      <div class="headercol">
-        Contact
-      </div>
-      <div class="headercol hidden">
-        <!-- hidden -->
-      </div>
-      <div class="headercol hidden">
-        <!-- hidden -->
-      </div>
-      <div class="headercol hidden">
-        <!-- hidden -->
-      </div>
-      <div class="headercol rightjustify">
-        <img src="img/icon-search.png" alt="search icon" id="searchicon"/>
-      </div>
-    </div>
-    <div class="row" >
-      <div class="col" id="mainparagraphrow">
-        <div class="col" id="titletext">
-          <h1>The Details Matter</h1>
-        </div>
-        <div class="col" id="titlecontent">
-          We're making beautiful website layouts using modern methods.
-        </div>
-      </div>
-    </div>
-    <div class="row" id="imagebox">
-      <div class="col" id="imagecolumn">
+      <!-- <div class="header-section"> -->
+      <!-- <div class="col" id="brand">
 
-        <div class="col" id="leftcolumn">
-          <div class="col" id="leftupper">
-            <img src="https://unsplash.it/600/300?random" />
-          </div>
-          <div class="col" id="leftlower">
-            <div class="col" id="leftlowerleft">
-              <img src="https://unsplash.it/230/180?random" />
-            </div>
-            <div class="col" id="leftlowerright">
-              <img src="https://unsplash.it/350/180?random" />
-            </div>
-          </div>
+    </div> -->
+    <div class="headercol">
+      <div class="menulist">
+        <ul id="horizontallist">
+          <li>
+            <img id="logo" src="img/designco-logo.png" alt="designco logo" />
+          </li>
+          <li class="red">
+            Home
+          </li>
+          <li>
+            Portfolio
+          </li>
+          <li>
+            About
+          </li>
+          <li>
+            Contact
+          </li>
+          <li id="rightli">
+            <img src="img/icon-search.png" alt="search icon" id="searchicon"/>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+  </>
+  <div class="col" id="mainparagraphrow">
+    <div class="col" id="titletext">
+      <h1>The Details Matter</h1>
+    </div>
+    <div class="col" id="titlecontent">
+      We're making beautiful website layouts using modern methods.
+    </div>
+  </div>
+  <div class="row" id="imagebox">
+    <div class="col" id="imagecolumn">
+
+      <div class="col" id="leftcolumn">
+        <div class="col" id="leftupper">
+          <img src="https://unsplash.it/600/300?random" />
         </div>
-        <div class="col" id="rightcolumn">
-          <div class="col" id="rightupper">
-            <img src="https://unsplash.it/360/160?random" />
+        <div class="col" id="leftlower">
+          <div class="col" id="leftlowerleft">
+            <img src="https://unsplash.it/230/180?random" />
           </div>
-          <div class="col" id="rightlower">
-            <img src="https://unsplash.it/360/330?random" />
+          <div class="col" id="leftlowerright">
+            <img src="https://unsplash.it/350/180?random" />
           </div>
         </div>
       </div>
+      <div class="col" id="rightcolumn">
+        <div class="col" id="rightupper">
+          <img src="https://unsplash.it/360/160?random" />
+        </div>
+        <div class="col" id="rightlower">
+          <img src="https://unsplash.it/360/330?random" />
+        </div>
+      </div>
     </div>
-    <div class="row">
-      <div class="col one-quarter-flex flex-direction-column">
-        <h3>What's New</h3>
+  </div>
+  <div class="inforow">
+    <div class="col one-quarter-flex flex-direction-column">
+      <h3>What's New</h3>
+      <p>
+        We always have new projects that clients hire us for. <br />
+      </p>
+      <a href="#">View recent projects.</a>
+    </div>
+    <div class="col three-quarter-flex">
+      <div class="text-columns"> <!--3 columns with text spread equally across.-->
+        <span class="bigfont">Modern Layouts</span>
         <p>
-          We always have new projects that clients hire us for. <br />
-        </p>
-        <a href="#">View recent projects.</a>
-      </div>
-      <div class="col three-quarter-flex">
-        <div class="text-columns"> <!--3 columns with text spread equally across.-->
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
+        </p>
       </div>
     </div>
-  </main>
+  </div>
+</div>
 </body>
 </html>
